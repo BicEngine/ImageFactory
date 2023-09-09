@@ -15,7 +15,7 @@ use Bic\Image\FileImage;
 final class Factory implements ExtendableFactoryInterface
 {
     /**
-     * @var \SplObjectStorage<DecoderInterface>
+     * @var \SplObjectStorage<DecoderInterface, mixed>
      */
     private readonly \SplObjectStorage $decoders;
 
