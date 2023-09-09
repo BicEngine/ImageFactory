@@ -69,7 +69,7 @@ final class Factory implements ExtendableFactoryInterface
             throw new NonReadableException('Passed resource stream is not readable');
         }
 
-        if ($meta['seekable'] !== true) {
+        if (!$meta['seekable']) {
             throw new NonSeekableException('Passed resource stream is not seekable');
         }
 
